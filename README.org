@@ -1,0 +1,24 @@
+#+title: void-user-repo.github.io
+#+author: c0pt4n
+
+** Table of Contents :toc_3:
+  - [[#installation][Installation]]
+    - [[#add-the-repository-configuration][Add the repository configuration]]
+    - [[#sync-and-install][Sync and install]]
+  - [[#source][Source]]
+
+** Installation
+
+*** Add the repository configuration
+#+begin_src shell
+echo "repository=https://github.com/Void-User-Repo/void-user-repo.github.io/releases/download/latest" | sudo tee /etc/xbps.d/10-zen.conf
+#+end_src
+
+*** Sync and install
+#+begin_src shell
+sudo xbps-install -S linux-zen linux-zen-headers
+#+end_src
+
+** Source
+
+[[https://github.com/Void-User-Repo/void-packages/tree/master/srcpkgs/linux-zen][src]]
